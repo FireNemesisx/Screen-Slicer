@@ -4,184 +4,185 @@
   <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.9+">
   <img src="https://img.shields.io/badge/OpenCV-4.8%2B-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
   <img src="https://img.shields.io/badge/MediaPipe-Tasks%20Vision-00C7B7?style=for-the-badge&logo=google&logoColor=white" alt="MediaPipe">
-  <img src="https://img.shields.io/badge/NumPy-Fast%20Math-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License">
+  <img src="https://img.shields.io/badge/NumPy-H%C4%B1zl%C4%B1%20Matematik-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/Lisans-MIT-green?style=for-the-badge" alt="MIT Lisansı">
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=for-the-badge" alt="Platform">
 </p>
 
 <p align="center">
-  <strong>Next-Generation Real-Time Augmented Reality (AR) Gesture Gaming & Interactive Creative Suite</strong>
+  <strong>Webcam Tabanlı, Yeni Nesil Gerçek Zamanlı Artırılmış Gerçeklik (AR) El Hareketi Oyun ve İnteraktif Çizim Paketi</strong>
 </p>
 
 <p align="center">
-  <a href="#-overview">Overview</a> •
-  <a href="#-game-modes">Game Modes</a> •
-  <a href="#-controls--shortcuts">Controls</a> •
-  <a href="#-architecture">Architecture</a> •
-  <a href="#-installation--usage">Installation</a> •
-  <a href="#-t%C3%BCrk%C3%A7e-rehber">Türkçe Rehber</a>
+  <a href="#-genel-bakış">Genel Bakış</a> •
+  <a href="#-oyun-ve-deneyim-modları">Oyun Modları</a> •
+  <a href="#-kontroller-ve-kısayollar">Kontroller</a> •
+  <a href="#-el-hareketleri-rehberi">El Hareketleri</a> •
+  <a href="#-proje-mimarisi">Mimari</a> •
+  <a href="#-kurulum-ve-kullanım">Kurulum</a> •
+  <a href="#-sorun-giderme-ve-sss">SSS</a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="screenshot_001.png" alt="Screen Slicer Gameplay Preview" width="850" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
+  <img src="screenshot_001.png" alt="Screen Slicer Oynanış Önizlemesi" width="850" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
 </p>
 
 ---
 
-## 🌟 Overview
+## 🌟 Genel Bakış
 
-**Screen Slicer** transforms your standard webcam into an ultra-responsive, zero-latency Augmented Reality playground. Utilizing **Google MediaPipe Tasks Vision (HandLandmarker)**, **OpenCV**, and **NumPy**, Screen Slicer detects 21 3D hand landmarks in real time and translates natural hand gestures into high-speed physics interactions, mini-games, and 3D wireframe spatial drawings.
+**Screen Slicer**, sıradan bir web kamerasını yüksek tepki hızına sahip, sıfır gecikmeli bir Artırılmış Gerçeklik (AR) oyun alanına dönüştürür. **Google MediaPipe Tasks Vision (HandLandmarker)**, **OpenCV** ve **NumPy** altyapısıyla çalışan sistem, 21 adet 3 boyutlu el eklemini gerçek zamanlı olarak takip eder; doğal el hareketlerini yüksek hızlı fizik etkileşimlerine, mini oyunlara ve 3B tel kafes uzamsal çizimlere dönüştürür.
 
-No special hardware or depth cameras are required—just your computer and a webcam!
+Özel bir sensör veya derinlik kamerasına (depth camera) gerek yoktur; yalnızca bilgisayarınız ve standart bir webcam yeterlidir!
 
-### ✨ Key Highlights
+### ✨ Öne Çıkan Özellikler
 
-- 🖐️ **21-Landmark Real-Time Multi-Hand Tracking**: Sub-millisecond tracking supporting 1 or 2 hands simultaneously.
-- 🎯 **Moving Average Filter Smoothing**: Jitter-free fingertip cursor and blade trajectory stabilization.
-- ⚡ **Ultra-Modern Glassmorphic UI**: TrueType anti-aliased typography (Segoe UI / Arial), dynamic glass cards, neon glows, and interactive HUD.
-- 🖥️ **Dynamic Fullscreen & Per-Monitor High-DPI Awareness**: Seamless crisp rendering across 1080p, 2K, and 4K displays on Windows.
-- 🎮 **7 Integrated Game & AR Simulation Modes**: Switch instantly on the fly with single-key shortcuts.
-
----
-
-## 🎮 Game Modes
-
-### 1. 🥊 AR Boxing Championship (`K`)
-Enter the virtual ring! Face off against an animated AI opponent (**TITAN**).
-- **Punch Detection**: Throw rapid jabs, crosses, and hooks with your fists.
-- **Guard & Dodge**: Raise both hands to block incoming enemy punches or slip left/right to dodge.
-- **Dynamic Feedback**: Real-time hit sparks, floating damage numbers, combo multipliers, and animated catch-up health bars.
-
-### 2. 🍉 Fruit Ninja Slash (`F`)
-A blade-slashing arcade classic in your living room!
-- **Hand Blade Trail**: Fast hand motion generates a luminous particle slash trail.
-- **Fruit Physics**: Watermelons, apples, oranges, lemons, and grapes launched in ballistic arcs.
-- **Bombs & Combos**: Slice multiple fruits in a single swing for combo points; avoid deadly explosives!
-
-### 3. 🏒 Neon Air Hockey (`H`)
-Two-player fast-paced tabletop hockey right on your camera feed.
-- **Dual Mallets**: Hand 1 controls the top mallet; Hand 2 controls the bottom mallet (or play solo with both hands!).
-- **Realistic 2D Elastic Physics**: Wall rebounds, velocity-based collisions, friction, and goal detection.
-- **Effects**: Goal celebrations, puck particle trails, and screen shake on heavy impacts.
-
-### 4. 🏀 Physics Basketball (`B`)
-Test your shooting and swatting skills.
-- **Ball Interaction**: Swat and flick the basketball towards the hoop with your fingertips.
-- **Moving Hoop Mode**: Press `1` for stationary hoop or `2` for an oscillating moving hoop.
-- **Realistic Physics**: Gravity, backboard bounces, and net swishes.
-
-### 5. 🏹 Precision Archery (`A`)
-Draw and release arrows like a virtual archer.
-- **Bow Mechanics**: Pull back on the bowstring with your hand gesture; the trajectory updates dynamically.
-- **Wind & Gravity**: Realistic parabolic ballistic flight paths with target hit detection (Bullseye scoring).
-- **Moving Target Mode**: Press `1` for fixed target or `2` for moving vertical targets.
-
-### 6. ☀️ Sun in Palm (`G`)
-Harness cosmic power in the palm of your hands!
-- **Dynamic Solar Flare**: An animated celestial orb generates orbiting energy particles directly over your open palm.
-- **Dual Hands**: Left hand can hold a star, right hand can channel a swirling Black Hole.
-- **Color Cycling (`Space`)**: Cycle between Fire, Plasma, Yellow Star, White Dwarf, and Black Hole.
-
-### 7. 🎨 AR Spatial Drawing & 3D Shapes (`D`)
-Draw in 3D space with your fingers!
-- **Pinch to Draw**: Pinch your index and middle fingers together to lay down neon strokes.
-- **Wireframe Solids (`T`)**: Project and rotate 3D wireframe models (Cube, Pyramid, Diamond) anchored in space.
-- **Creative Tools**:
-  - `1-5`: Quick color palette selection
-  - `+/-`: Adjust brush thickness
-  - `E`: Dynamic Eraser
-  - `P`: Particle Spray Brush
-  - `Z` / `X`: Undo last stroke or remove last 3D shape
+- 🖐️ **21 Eklemli Gerçek Zamanlı Çoklu El Takibi:** Aynı anda 1 veya 2 eli milisaniyenin altında gecikmeyle tespit eder.
+- 🎯 **Hareketli Ortalama Filtresi (Moving Average Filter):** Titremesiz imleç ve akıcı kılıç/vuruş hareketleri için koordinat yumuşatma.
+- ⚡ **Ultra Modern Glassmorphic Arayüz:** TrueType Segoe UI / Arial pürüzsüz tipografi, yarı saydam cam paneller, neon ışıltılar ve dinamik HUD göstergeleri.
+- 🖥️ **Dinamik Tam Ekran & Yüksek DPI Desteği:** Windows ortamında Per-Monitor DPI ölçekleme ile 1080p, 2K ve 4K ekranlarda pikselleşme olmadan kristal netliğinde görüntü.
+- 🎮 **7 Entegre Oyun ve AR Deneyimi:** Klavyedeki tek bir tuşa basarak oyunlar ve modlar arasında anında geçiş yapabilme.
 
 ---
 
-## ⌨️ Controls & Shortcuts
+## 🎮 Oyun ve Deneyim Modları
 
-| Key | Mode / Scope | Action |
+### 1. 🥊 AR Boks Şampiyonası (`K`)
+Sanal ringe adım atın! Ekranda canlandırılan yapay zeka rakip (**TITAN**) ile dövüşün.
+- **Yumruk Algılama:** Yumruklarınızı ileri doğru savurarak direkt (jab/cross) ve kroşe vuruşları yapın.
+- **Gard Alma ve Kaçış:** İki elinizi yukarı kaldırarak gelen darbeleri bloklayın veya başınızı sağa/sola eğerek gelen yumruklardan kaçın (dodge).
+- **Dinamik Geri Bildirim:** İsabet kıvılcımları, havada süzülen hasar sayıları, kombo çarpanı ve kademeli azalan can barları.
+
+### 2. 🍉 Fruit Ninja (`F`)
+Klasik meyve kesme heyecanını oturma odanıza taşıyın!
+- **Kılıç İzi (Blade Trail):** Hızlı el hareketleriniz ekranda parlayan bir ışık izi oluşturur.
+- **Meyve Fiziği:** Karpuz, elma, portakal, limon ve üzümler yerçekimi ivmesiyle havalanır ve kesildiğinde ikiye bölünür.
+- **Kombolar ve Bombalar:** Tek bir hamlede birden fazla meyveyi keserek kombo puanı kazanın; araya karışan patlayıcı bombalara dikkat edin!
+
+### 3. 🏒 Neon Hava Hokeyi - Air Hockey (`H`)
+Kamera görüntünüzün üzerinde iki kişilik neon masa hokeyi keyfi.
+- **Çift Tokmak (Mallet):** 1. Oyuncu üst tokmakla, 2. Oyuncu alt tokmakla oynar (veya tek başınıza iki elinizle oynayabilirsiniz).
+- **Gerçekçi 2B Elastik Fizik:** Duvarlardan sekme, hıza duyarlı çarpışmalar, sürtünme ve kale çizgisi tespiti.
+- **Efektler:** Gol kutlamaları, hızlanan diskin arkasında bıraktığı parçacık izleri ve sert vuruşlarda ekran sarsıntısı.
+
+### 4. 🏀 Fizik Tabanlı Basketbol (`B`)
+Şut yeteneğinizi ve el çabukluğunuzu test edin.
+- **Top Etkileşimi:** Basketbol topunu parmak uçlarınızla hafifçe veya sertçe iterek potaya doğru fırlatın.
+- **Hareketli Pota Modu:** `1` tuşu ile sabit pota, `2` tuşu ile sağa sola salınan hareketli pota moduna geçiş yapın.
+- **Fizik Motoru:** Yerçekimi, panya çarpışmaları ve file geçişleri.
+
+### 5. 🏹 Hassas Okçuluk (`A`)
+Sanal bir okçu gibi yayı gerin ve hedefi vurun.
+- **Yay Mekaniği:** Elinizle kirişi geriye doğru çekin; ekranda dinamik atış rotası (trajektori) çizilir.
+- **Balistik Fizik:** Yerçekimi ve mesafe hesabı ile gerçekçi ok uçuşu, hedef tahtasında tam on ikiden vurma (Bullseye) puanlaması.
+- **Hareketli Hedef Modu:** `1` tuşu ile sabit hedef, `2` tuşu ile yukarı-aşağı hareket eden hedef.
+
+### 6. ☀️ Avuçta Güneş & Kara Delik (`G`)
+Kozmik enerjiyi avucunuzun içinde hissedin!
+- **Dinamik Enerji Küresi:** Açık avucunuzun üzerinde dönen, kıvılcımlar ve parçacıklar saçan canlı bir yıldız simülasyonu.
+- **Çift El Desteği:** Bir elinizde parlak bir yıldız taşırken, diğer elinizle uzayı büken bir Kara Delik (Black Hole) oluşturabilirsiniz.
+- **Renk Döngüsü (`Boşluk`):** Ateş (Fire), Plazma (Plasma), Standart Sarı Yıldız, Beyaz Cüce ve Kara Delik arasında geçiş yapın.
+
+### 7. 🎨 AR 3B Çizim & Geometrik Modeller (`D`)
+Havada parmaklarınızla 3 boyutlu çizim yapın ve modeller yerleştirin.
+- **Kıstırma ile Çizim:** İşaret ve orta parmağınızı birleştirerek uzayda neon fırça darbeleri bırakın.
+- **3B Tel Kafes Katılar (`T`):** Küp (**Cube**), Piramit (**Pyramid**) ve Elmas (**Diamond**) modellerini havaya yerleştirin ve döndürün.
+- **Çizim Araçları:**
+  - `1-5`: Renk paleti seçimi
+  - `+/-`: Fırça çizgi kalınlığını artırma/azaltma
+  - `E`: Silgi modu
+  - `P`: Parçacık fırçası (Particle spray)
+  - `Z` / `X`: Son çizgiyi veya son nesneyi geri alma (Undo)
+
+---
+
+## ⌨️ Kontroller ve Kısayollar
+
+| Tuş | Kapsam | Açıklama |
 |:---:|:---:|---|
-| <kbd>M</kbd> | Global | Return to **Main Menu / Dashboard** |
-| <kbd>U</kbd> | Global | Toggle **Fullscreen** mode |
-| <kbd>S</kbd> | Global | Capture high-resolution **Screenshot** |
-| <kbd>Q</kbd> / <kbd>ESC</kbd> | Global | Quit Application |
-| <kbd>K</kbd> | Mode Switch | Launch **AR Boxing Mode** |
-| <kbd>F</kbd> | Mode Switch | Launch **Fruit Ninja Mode** |
-| <kbd>H</kbd> | Mode Switch | Launch **Air Hockey Mode** |
-| <kbd>B</kbd> | Mode Switch | Launch **Basketball Mode** |
-| <kbd>A</kbd> | Mode Switch | Launch **Archery Mode** |
-| <kbd>G</kbd> | Mode Switch | Launch **Sun in Palm Mode** |
-| <kbd>D</kbd> | Mode Switch | Launch **AR Draw & 3D Shapes Mode** |
-| <kbd>R</kbd> | In-Game | **Restart** active game mode (Fruit Ninja / Air Hockey / Boxing) |
-| <kbd>Space</kbd> | Sun Mode | Cycle celestial orb colors & Black Hole |
-| <kbd>1</kbd> / <kbd>2</kbd> | Mini-games | Toggle stationary / moving targets (Basketball & Archery) |
-| <kbd>1</kbd> - <kbd>5</kbd> | AR Draw | Select drawing color palette |
-| <kbd>+</kbd> / <kbd>-</kbd> | AR Draw | Increase / decrease brush stroke thickness |
-| <kbd>E</kbd> | AR Draw | Toggle **Eraser** |
-| <kbd>P</kbd> | AR Draw | Toggle **Particle Brush** |
-| <kbd>T</kbd> | AR Draw | Cycle 3D shape (**Cube** / **Pyramid** / **Diamond**) |
-| <kbd>Z</kbd> | AR Draw | **Undo** last brush stroke |
-| <kbd>X</kbd> | AR Draw | **Delete** last placed 3D shape |
-| <kbd>C</kbd> | AR Draw | **Clear** entire canvas |
+| <kbd>M</kbd> | Genel | **Ana Menü / Kontrol Paneli**'ne döner |
+| <kbd>U</kbd> | Genel | **Tam Ekran (Fullscreen)** modunu açar / kapatır |
+| <kbd>S</kbd> | Genel | Yüksek çözünürlüklü **Ekran Görüntüsü (Screenshot)** kaydeder |
+| <kbd>Q</kbd> / <kbd>ESC</kbd> | Genel | Uygulamadan çıkar |
+| <kbd>K</kbd> | Mod Geçişi | **AR Boks Modu**'nu başlatır |
+| <kbd>F</kbd> | Mod Geçişi | **Fruit Ninja Modu**'nu başlatır |
+| <kbd>H</kbd> | Mod Geçişi | **Air Hockey Modu**'nu başlatır |
+| <kbd>B</kbd> | Mod Geçişi | **Basketbol Modu**'nu başlatır |
+| <kbd>A</kbd> | Mod Geçişi | **Okçuluk Modu**'nu başlatır |
+| <kbd>G</kbd> | Mod Geçişi | **Avuçta Güneş Modu**'nu başlatır |
+| <kbd>D</kbd> | Mod Geçişi | **AR Çizim ve 3B Şekiller Modu**'nu başlatır |
+| <kbd>R</kbd> | Oyun İçi | Aktif oyunu **yeniden başlatır** (Fruit Ninja / Air Hockey / Boks) |
+| <kbd>Boşluk</kbd> | Güneş Modu | Güneş / Kara Delik renklerini değiştirir |
+| <kbd>1</kbd> / <kbd>2</kbd> | Mini Oyunlar | Sabit / Hareketli hedef modları (Basketbol ve Okçuluk) |
+| <kbd>1</kbd> - <kbd>5</kbd> | AR Çizim | Çizim rengini değiştirir |
+| <kbd>+</kbd> / <kbd>-</kbd> | AR Çizim | Çizgi kalınlığını artırır / azaltır |
+| <kbd>E</kbd> | AR Çizim | **Silgi (Eraser)** modunu açar / kapatır |
+| <kbd>P</kbd> | AR Çizim | **Parçacık Fırçası** modunu açar / kapatır |
+| <kbd>T</kbd> | AR Çizim | 3B şekli değiştirir (**Küp** / **Piramit** / **Elmas**) |
+| <kbd>Z</kbd> | AR Çizim | Son çizilen çizgiyi **geri alır** |
+| <kbd>X</kbd> | AR Çizim | Son yerleştirilen 3B nesneyi **siler** |
+| <kbd>C</kbd> | AR Çizim | Tuvali **tamamen temizler** |
 
 ---
 
-## 🖐️ Hand Gestures Guide
+## 🖐️ El Hareketleri Rehberi
 
 ```
-        INDEX PINCH                   OPEN PALM                    CLOSED FIST
-       (Draw / Slice)             (Celestial Energy)             (Boxing Strike)
+      PARMAK KISTIRMA                 AÇIK AVUÇ                     SIKILI YUMRUK
+     (Çizim / Dilimleme)           (Kozmik Enerji)                  (Boks Vuruşu)
             /\                         \  |  /                         ____
            /  \                         \ | /                         |####|
           /    \                         \|/                          |####|
-      [Index + Middle]                [Open Palm]                   [Fist Clenched]
+     [İşaret + Orta]                 [Açık Avuç]                   [Sıkılı Yumruk]
 ```
 
-- **Pointer Cursor**: Extend index finger alone to navigate menus and position items.
-- **Draw / Slice / Swat**: Pinch index and middle fingers together to draw in AR or slash flying objects.
-- **Manipulate Shapes / Zoom**: Pinch thumb and index finger to scale or interact with 3D wireframes.
-- **Hold Orb**: Hold an open palm facing the webcam to ignite the solar sphere.
-- **Punch / Guard**: Clench a fist and drive forward to punch; hold both fists up to guard.
+- **İşaret Parmağı (İmleç):** Menüleri gezmek ve öğeleri konumlandırmak için sadece işaret parmağınızı uzatın.
+- **Çizim / Kesme / Fırlatma:** İşaret ve orta parmağınızı yan yana getirip birleştirerek havada çizim yapın veya meyveleri dilimleyin.
+- **3B Şekil Etkileşimi:** Başparmak ile işaret parmağını kıstırarak 3B nesneleri ölçeklendirin veya döndürün.
+- **Enerji Küresi Tutma:** Kameraya doğru avuç içinizi tamamen açın; enerji küresi elinizin merkezine yerleşecektir.
+- **Yumruk & Gard:** Elinizi yumruk yaparak öne doğru itin; iki elinizi yüz hizasına kaldırarak gard alın.
 
 ---
 
-## 📁 Architecture & File Structure
+## 📁 Proje Mimarisi
 
 ```
 Screen Slicer/
-├── main.py                 # Core application loop, high-DPI handling, mode coordinator
-├── hand_tracker.py         # MediaPipe Tasks Vision Multi-HandLandmarker tracker (21 landmarks)
-├── hand_landmarker.task    # Google MediaPipe HandLandmarker neural network model asset
-├── gesture_engine.py       # Gesture recognition, finger states, stroke & particle brush engine
-├── geometry_engine.py      # 3D perspective projection, rotation matrices, wireframe solids
-├── ui_engine.py            # Glassmorphic UI renderer, TrueType Segoe UI typography, neon glow
-├── boxing_engine.py        # AR Boxing engine: AI opponent, punch/dodge detection, health HUD
-├── fruit_ninja.py          # Fruit Ninja engine: projectile physics, blade trails, combo system
-├── air_hockey.py           # 2-Player Air Hockey: 2D physics engine, mallets, goals, particle effects
-├── basketball_engine.py    # Basketball physics, moving backboard & hoop, swat detection
-├── archery_engine.py       # Archery ballistics, trajectory prediction, bullseye scoring
-├── sun_engine.py           # Solar & black hole particle simulation anchored to palm orientation
-├── requirements.txt        # Python package dependencies
-├── Oyunu_Baslat.bat        # Windows 1-click launch batch script
-├── LICENSE                 # MIT Open-Source License
-└── README.md               # Documentation & usage guide
+├── main.py                 # Ana uygulama döngüsü, yüksek DPI kontrolü, mod yöneticisi
+├── hand_tracker.py         # MediaPipe Tasks Vision çoklu el takip motoru (21 eklem)
+├── hand_landmarker.task    # Google MediaPipe HandLandmarker yapay zeka modeli
+├── gesture_engine.py       # El hareketi tespiti, parmak durumları ve çizim motoru
+├── geometry_engine.py      # 3B perspektif izdüşüm, dönme matrisleri ve tel kafes şekiller
+├── ui_engine.py            # Glassmorphism UI motoru, TrueType pürüzsüz yazı, neon parıltılar
+├── boxing_engine.py        # AR Boks motoru: Yapay zeka rakip, yumruk/kaçış algılama, can HUD
+├── fruit_ninja.py          # Fruit Ninja motoru: Balistik meyve fiziği, kılıç izi, kombo sistemi
+├── air_hockey.py           # 2 Kişilik Air Hockey: 2B çarpışma fiziği, tokmaklar, gol animasyonları
+├── basketball_engine.py    # Basketbol fiziği, hareketli pota ve şut algılama
+├── archery_engine.py       # Okçuluk mekaniği, atış trajektorisi ve hedef puanlama
+├── sun_engine.py           # Avuç içine kilitlenen güneş ve kara delik parçacık simülasyonu
+├── requirements.txt        # Gerekli Python paketleri
+├── Oyunu_Baslat.bat        # Windows için tek tıkla başlatma betiği
+├── LICENSE                 # MIT Açık Kaynak Lisansı
+└── README.md               # Detaylı dokümantasyon ve kullanım kılavuzu
 ```
 
 ---
 
-## 🚀 Installation & Usage
+## 🚀 Kurulum ve Kullanım
 
-### 1. Prerequisites
-- **Python 3.9** or higher installed ([Download Python](https://www.python.org/downloads/))
-- A functional **Webcam** (built-in or USB)
+### 1. Gereksinimler
+- **Python 3.9** veya üzeri ([Python İndir](https://www.python.org/downloads/))
+- Çalışır durumda bir **Webcam** (Dahili veya Harici USB Kamera)
 
-### 2. Clone the Repository
+### 2. Projeyi Klonlayın
 ```bash
 git clone https://github.com/FireNemesisx/Screen-Slicer.git
 cd Screen-Slicer
 ```
 
-### 3. Create a Virtual Environment (Recommended)
+### 3. Sanal Ortam Oluşturun (Önerilir)
 ```bash
 # Windows
 python -m venv venv
@@ -192,72 +193,54 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 4. Install Dependencies
+### 4. Gerekli Paketleri Yükleyin
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run Screen Slicer
+### 5. Uygulamayı Başlatın
 ```bash
 python main.py
 ```
-> **Windows Quick Launch**: You can also simply double-click **`Oyunu_Baslat.bat`** to start the application with one click!
+
+> 💡 **Windows Kolay Başlatma:** Proje klasöründeki **`Oyunu_Baslat.bat`** dosyasına çift tıklayarak uygulamayı komut satırına gerek kalmadan doğrudan başlatabilirsiniz.
 
 ---
 
-## 🇹🇷 Türkçe Rehber
-
-**Screen Slicer**, kameranızı kullanarak el hareketlerinizle oynayabileceğiniz ve 3 boyutlu çizimler yapabileceğiniz gerçek zamanlı bir Artırılmış Gerçeklik (AR) oyun paketidir.
-
-### 🎯 Öne Çıkan Modlar
-1. **Boks Modu (`K`)**: Ekrana gelen boksöre karşı yumruk atın, gard alın ve kaçın (dodge).
-2. **Fruit Ninja (`F`)**: Havada uçuşan meyveleri elinizi savurarak kesin; bombalara dikkat edin!
-3. **Air Hockey (`H`)**: İki elinizle veya bir arkadaşınızla neon hokey masasında yarışın.
-4. **Basketbol (`B`)**: Topa elinizle vurarak potaya basket atın (Hareketli pota için `2` tuşuna basın).
-5. **Okçuluk (`A`)**: Yayı gererek hedefe nişan alın ve tam on ikiden vurun.
-6. **Avuçta Güneş (`G`)**: Avucunuzu açarak parlayan bir yıldız veya kara delik oluşturun (`Boşluk` ile renk değiştirin).
-7. **3B Çizim Modu (`D`)**: Parmaklarınızla havaya çizim yapın, 3B dönen geometrik cisimler (`T`) yerleştirin.
-
-### 🚀 Hızlı Başlangıç (Windows)
-1. Python yüklü olduğundan emin olun.
-2. Klasör içindeki **`Oyunu_Baslat.bat`** dosyasına çift tıklayarak oyunu doğrudan başlatabilirsiniz.
-
----
-
-## 🛠️ Troubleshooting & FAQ
+## 🛠️ Sorun Giderme ve SSS
 
 <details>
-<summary><strong>1. "Model not found: hand_landmarker.task" Error</strong></summary>
+<summary><strong>1. "Model not found: hand_landmarker.task" Hatası</strong></summary>
 
-Make sure the file `hand_landmarker.task` is located in the root directory alongside `main.py`. If missing, it can be downloaded directly from Google MediaPipe:
+`hand_landmarker.task` dosyasının `main.py` ile aynı dizinde bulunduğundan emin olun. Dosya eksikse doğrudan Google MediaPipe deposundan indirebilirsiniz:
 ```bash
-# Direct download link:
+# Doğrudan model indirme bağlantısı:
 # https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
 ```
 </details>
 
 <details>
-<summary><strong>2. Camera is not opening or black screen</strong></summary>
+<summary><strong>2. Kamera açılmıyor veya siyah ekran görünüyor</strong></summary>
 
-- Verify that your camera is not being used by another application (Zoom, Teams, Discord, etc.).
-- If you have multiple cameras, change `cv2.VideoCapture(0)` in `main.py` to `cv2.VideoCapture(1)`.
-- Make sure Windows Camera privacy permissions are enabled for desktop applications.
+- Kameranızın başka bir uygulama (Zoom, Teams, Discord, vb.) tarafından kullanılmadığından emin olun.
+- Birden fazla kameranız varsa, `main.py` içindeki `cv2.VideoCapture(0)` indeksini `cv2.VideoCapture(1)` olarak değiştirmeyi deneyin.
+- Windows Ayarları > Gizlilik > Kamera menüsünden masaüstü uygulamaları için kamera erişim izninin açık olduğunu doğrulayın.
 </details>
 
 <details>
-<summary><strong>3. Low FPS or Lag</strong></summary>
+<summary><strong>3. Düşük FPS veya Gecikme Hissiyatı</strong></summary>
 
-- Ensure good lighting for optimal hand landmark tracking accuracy.
-- Reduce camera capture resolution in `main.py` if running on older hardware.
+- El eklemlerinin doğru ve hızlı tespit edilmesi için odanın iyi aydınlatılmış olduğundan emin olun.
+- Eski donanımlarda performansı artırmak için `main.py` dosyasındaki kamera çözünürlüğünü optimize edebilirsiniz.
 </details>
 
 ---
 
-## 📄 License
+## 📄 Lisans
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+Bu proje **[MIT Lisansı](LICENSE)** ile lisanslanmıştır. Dilediğiniz gibi kullanabilir, geliştirebilir ve paylaşabilirsiniz.
 
-## 👤 Author
+## 👤 Geliştirici
 
-Developed with ❤️ by **[Etka Kudret Çeliköz](https://github.com/FireNemesisx)**.
-Feel free to open issues or contribute pull requests!
+**[Etka Kudret Çeliköz](https://github.com/FireNemesisx)** tarafından geliştirilmiştir.  
+Katkıda bulunmak için issue açabilir veya pull request gönderebilirsiniz!
