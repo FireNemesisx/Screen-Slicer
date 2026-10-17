@@ -25,12 +25,6 @@
 
 ---
 
-<p align="center">
-  <img src="screenshot_001.png" alt="Screen Slicer Oynanış Önizlemesi" width="850" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.4);">
-</p>
-
----
-
 ## 🌟 Genel Bakış
 
 **Screen Slicer**, sıradan bir web kamerasını yüksek tepki hızına sahip, sıfır gecikmeli bir Artırılmış Gerçeklik (AR) oyun alanına dönüştürür. **Google MediaPipe Tasks Vision (HandLandmarker)**, **OpenCV** ve **NumPy** altyapısıyla çalışan sistem, 21 adet 3 boyutlu el eklemini gerçek zamanlı olarak takip eder; doğal el hareketlerini yüksek hızlı fizik etkileşimlerine, mini oyunlara ve 3B tel kafes uzamsal çizimlere dönüştürür.

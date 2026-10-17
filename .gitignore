@@ -46,9 +46,8 @@ Thumbs.db
 desktop.ini
 *.lnk
 
-# Screenshots (preserve demo screenshot_001.png for README)
-screenshot_*.png
-!screenshot_001.png
+# Screenshots and generated images
+*.png
 
 # Logs and runtime data
 *.log
